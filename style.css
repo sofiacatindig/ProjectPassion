@@ -1,0 +1,196 @@
+/* Page Setup */
+body {
+    background-color: black;   /* full black background */
+    color: white;              /* default text color */
+    text-align: center;
+    min-height: 2500px;        /* make page tall enough for bottom docs */
+    margin: 0;
+    font-family: sans-serif;   /* optional clean font */
+}
+
+/* Headings */
+h1 { font-size: 72px; margin-top: 75px; margin-bottom: 10px; }
+h2 { font-size: 72px; margin-top: 0; }
+h3 {
+    line-height: 1;
+    font-weight: normal; 
+    color: white;
+}
+
+h5.intro-text {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: normal; 
+    color: white;
+    margin: 20px 0;
+}
+
+.THEVISION {
+    font-size: 72px;       /* same as h1/h2 if you want consistency */
+    font-weight: bold;     /* optional */
+    color: white;
+    margin: 20px 0;        /* spacing above and below */
+    text-align: center;    /* optional, centers text */
+}
+
+/* Nav */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+nav p { margin: 0; }
+nav a { color: white; text-decoration: none; }   /* white links */
+nav a:hover { color: gray; }
+
+/* Content Row */
+.content-row { display: flex; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 40px; }
+.doc-image { width: 300px; height: auto; }
+.video-wrapper { margin-top: 120px; }
+
+.horizontal-headings {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;  /* align items to left instead of center */
+    align-items: flex-start;
+    margin-top: 60px;
+    padding-left: 50px;          /* push the whole block to the right */
+}
+
+.horizontal-headings h5 {
+    font-weight: normal; /* removes bold */
+    line-height: 1;      /* single spacing */
+    font-size: 24px;     /* optional: keep size consistent */
+    color: white;        /* keep it visible on black */
+    margin: 0;           /* remove extra spacing */
+}
+
+/* Center Line */
+.center-line {
+    width: 2px;
+    height: 250px;
+    background-color: white;
+    margin: 100px auto;  /* center horizontally */
+}
+
+/* Docs Wrapper at Bottom */
+.docs-wrapper {
+    display: flex;              /* side by side */
+    justify-content: center;    /* center horizontally */
+    gap: 40px;                  /* space between docs */
+    margin-top: 100px;          /* push below everything */
+    margin-bottom: 50px;        /* optional spacing */
+}
+
+.docs-wrapper img { width: 300px; height: auto; cursor: pointer; }
+
+/* Optional Positioned Elements */
+.left, .right, .future-lens-doc-1, .future-lens-doc-2, .metacognition-doc {
+    color: white;              /* force text white if any positioned text */
+}
+
+
+/* CSS */
+body {
+    text-align: center;
+    min-height: 2500px; /* make page tall enough for bottom docs */
+}
+
+h1 { font-size: 72px; margin-top: 75px; margin-bottom: 10px; }
+h2 { font-size: 24px; margin-top: 0; }
+h3 { font-size: 18px; margin: 20px 50px; line-height: 1.5; }
+
+nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+nav p { margin: 0; }
+
+.content-row { display: flex; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 40px; }
+.doc-image { width: 300px; height: auto; }
+.video-wrapper { margin-top: 120px; }
+
+.center-line { width: 2px; height: 250px; background-color: white; position: absolute; left: 700px; top: 900px; }
+
+.horizontal-headings { display: flex; gap: 40px; justify-content: center; align-items: flex-start; margin-top: 60px; }
+.horizontal-headings h4 { font-size: 56px; margin: 0; text-align: left; }
+.horizontal-headings h5 { font-size: 24px; margin: 0; text-align: left; position: relative; top: -20px; left: 150px; }
+
+/* Flex wrapper for labels */
+.PASSION, .PURPOSE {
+    position: static;       /* ensures they stay in flow */
+    margin: 0;
+}
+
+/* Flex wrapper for labels */
+.labels-wrapper {
+    display: flex;
+    justify-content: center; /* center both labels horizontally */
+    gap: 300px;              /* distance between PASSION and PLAN */
+    margin-top: 50px;        /* space above labels */
+    margin-bottom: 20px;     /* space below labels */
+    align-items: baseline;   /* keeps text on same horizontal line */
+}
+
+.labels-wrapper p {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Docs side by side */
+.docs-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;              
+    margin-bottom: 50px;
+}
+
+.docs-wrapper img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.left {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 300px;    
+  left: 500px;      
+  margin: 0px;
+}
+
+.right {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 300px;    
+  right: 500px;     
+  margin: 0px;
+}
+
+.PLAN {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 20px 0;   /* spacing before/after */
+}
+
+.future-lens-doc-1 {
+    position: absolute; /* lets you control X and Y */
+    left: 410px;        /* distance from left edge */
+    top: 550px;         /* distance from top edge */
+    width: 300px;       /* adjust size */
+    height: auto;
+}
+
+.future-lens-doc-2 {
+    position: absolute; /* lets you control X and Y */
+    right: 410px;        /* distance from left edge */
+    top: 550px;         /* distance from top edge */
+    width: 300px;       /* adjust size */
+    height: auto;
+}
+
+.metacognition-doc {
+    width: 300px;
+    top: 800px;  
+    margin-top: 20px;
+}
