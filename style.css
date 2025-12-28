@@ -1,0 +1,83 @@
+body { background-color: black; color: white; }
+* { font-family: "Inter", sans-serif; font-weight: bold;}
+
+nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+nav p { margin: 0; }
+nav a { color: white; text-decoration: none; } 
+nav a:hover { color: gray; }
+
+.content { 
+  z-index: 1;        
+}
+
+#bg-video {
+  position: fixed;   /* stay in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* scale video to cover container */
+  z-index: -1;       /* send it behind content */
+}
+
+.PP { font-size: 130px; line-height: 1.2; text-align: left; font-weight: bold; position: absolute; top: 50px; left: 200px }
+.GOT { font-size: 130px; font-weight: bold; text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 50px }
+.PM { font-size: 130px; line-height: 1.2; text-align: center; font-weight: bold }
+.FL { font-size: 130px; line-height: 1.2; text-align: right; font-weight: bold; position: absolute; top: 50px; right: 300px }
+.main { font-size: 130px; font-weight: bold; position: absolute; top: 1360px; right: 450px }
+.SM { font-size: 65px; font-weight: bold; position: absolute; left: 50%; transform: translateX(-50%); top: 750px }
+.DG { font-size: 65px; font-weight: bold; position: absolute; left: 50%; transform: translateX(-50%); top: 750px }
+.PL { font-size: 65px; font-weight: bold; position: absolute; left: 50%; transform: translateX(-50%); top: 1225px }
+
+.line1 { font-size: 20px; position: absolute; left: 210px; top: 475px; font-weight: bold } 
+.line2 { font-size: 20px; text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 490px }
+.line3 { font-size: 20px; text-align: center; font-weight: bold; position: absolute; left: 50%; transform: translateX(-50%); top: 325px }
+
+.desc1 { font-size: 20px; text-align: left; position: absolute; left: 210px; top: 510px; opacity: 0.5 } 
+.desc6 { font-size: 20px; text-align: left; position: absolute; left: 50%; transform: translateX(-50%); top: 410px;  opacity: 0.5 }
+.desc4 { font-size: 20px; text-align: left; position: absolute; right: 240px; top: 1635px } 
+.desc5 { font-size: 20px; text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 515px; opacity: 0.5 }
+
+.Passion { font-size: 20px; text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 995px }
+.Purpose { font-size: 20px; text-align: center; position: absolute; left: 470px; top: 1305px }
+.Plan { font-size: 20px; text-align: center; position: absolute; right: 485px; top: 1305px }
+
+.EMS { font-size: 20px; text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 1920px }
+.EGenEd { font-size: 20px; text-align: center; position: absolute; right: 300px; top: 2145px }
+.ECOTF { font-size: 20px; position: absolute; left: 225px; top: 1625px }
+.EMSDECxAI { font-size: 20px; text-align: center; position: absolute; left: 260px; top: 2145px }
+.EMSDEC { font-size: 20px; position: absolute; right: 275px; top: 1745px }
+
+.logo { width: 500px; height: 500px; position: absolute; left: 800px; top: 150px }
+.site { width: 800px; height: 350px; position: absolute; left: 50%; transform: translateX(-50%); top: 940px }
+.doc1 { width: 300px; height: 400px; position: absolute; left: 325px; top: 1450px }
+
+.one { width: 350px; height: 400px; position: absolute; left: 50px; top: 175px; transform: rotate(25deg) }
+.three {width: 350px; height: 400px; position: absolute; right: 50px; top: 175px; transform: rotate(0deg) }
+
+.line4 { font-size: 20px; text-align: right; position: absolute; right: 200px; top: 475px; font-weight: bold } 
+.two { width: 650px; height: 655px; position: absolute; left: 100px; top: 115px }
+.desc3 { font-size: 20px; text-align: right; position: absolute; right: 200px; top: 550px; opacity: 0.5 } 
+.FL { font-size: 130px; line-height: 1.2; text-align: right; font-weight: bold; position: absolute; top: 50px; right: 200px }
+
+.ncircle1 { width: 100px; height: 100px; position: absolute; right: 675px; top: 600px }
+.ncircle2 { width: 125px; height: 100px; position: absolute; right: 455px; top: 920px }
+.ncircle3 { width: 100px; height: 100px; position: absolute; left: 465px; top: 920px }
+
+#x { position: absolute; top: 20px; right: 20px; font-size: 36px; font-weight: bold; color: white; cursor: pointer; z-index: 10001; }
+
+.MS { width: 300px; height: 300px; position: absolute; left: 50%; transform: translateX(-50%); top: 1600px }
+.COTF { width: 300px; height: 200px; position: absolute; left: 200px; top: 1400px }
+.MSDEC { width: 250px; height: 320px; position: absolute; right: 200px; top: 1400px }
+.GenEd { width: 300px; height: 200px; position: absolute; right: 200px; top: 1925px }
+.AI { width: 250px; height: 320px; position: absolute; left: 200px; top: 1805px }
+
+.vault3 { display: flex; font-size: 20px; justify-content: center; left: 10px; gap: 370px; position: relative; top: 625px; } 
+
+.five { width: 215px; height: 300px; position: absolute; left: 50%; transform: translateX(-50%); top: 700px }
+.sixseven { display: flex; justify-content: center; gap: 200px; position: relative; top: 570px; } 
+.vault1 { width: 300px; height: 300px; display: flex; justify-content: center; gap: 150px; position: absolute; top: 750px; left: 50%; transform: translateX(-50%); } .vault1 img { cursor: pointer; }
+.vault2 { width: 300px; height: 300px; position: absolute; left: 50%; transform: translateX(-50%); top: 1200px }
+.PLC { display: flex; justify-content: center; gap: 300px; margin-top: 1650px; } .PLC img { cursor: pointer; }
+.PLM { display: flex; justify-content: center; gap: 300px; margin-top: 100px; } .PLM img { cursor: pointer; }
+.diagrams { display: flex; justify-content: center; gap: 100px; margin-top: 900px; } .diagrams img { cursor: pointer; }
