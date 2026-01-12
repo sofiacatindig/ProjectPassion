@@ -66,7 +66,7 @@ nav a:hover { color: gray; }
 
 #x { position: absolute; top: 20px; right: 20px; font-size: 36px; font-weight: bold; color: white; cursor: pointer; z-index: 10001; }
 
-.MS { width: 300px; height: 300px; position: absolute; left: 50%; transform: translateX(-50%); top: 1600px }
+.MS { width: 500px; height: 500px; position: absolute; left: 50%; transform: translateX(-50%); top: 1550px }
 .COTF { width: 300px; height: 200px; position: absolute; left: 200px; top: 1400px }
 .MSDEC { width: 250px; height: 320px; position: absolute; right: 200px; top: 1400px }
 .GenEd { width: 300px; height: 200px; position: absolute; right: 200px; top: 1925px }
@@ -76,7 +76,7 @@ nav a:hover { color: gray; }
 
 .five { width: 215px; height: 300px; position: absolute; left: 50%; transform: translateX(-50%); top: 700px }
 .sixseven { display: flex; justify-content: center; gap: 200px; position: relative; top: 570px; } 
-.vault1 { width: 300px; height: 300px; display: flex; justify-content: center; gap: 125px; position: absolute; top: 750px; left: 580px }
+.vault1 { width: 500px; height: 500px; display: flex; justify-content: center; gap: -50px; position: absolute; top: 650px; left: 500px }
 .vault2 { width: 300px; height: 300px; position: absolute; left: 50%; transform: translateX(-50%); top: 1200px }
 .PLC { display: flex; justify-content: center; gap: 300px; margin-top: 1650px; } .PLC img { cursor: pointer; }
 .PLM { display: flex; justify-content: center; gap: 300px; margin-top: 100px; } .PLM img { cursor: pointer; }

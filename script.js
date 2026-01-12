@@ -1,17 +1,24 @@
-const thumbnails = document.querySelectorAll("img[data-pdf]");
-const viewer = document.getElementById("PDF");
-const x = document.getElementById("x");
+document.addEventListener("DOMContentLoaded", () => {
+  const thumbnails = document.querySelectorAll("img[data-pdf]");
+  const viewer = document.getElementById("PDF");
+  const closeBtn = document.getElementById("x");
 
-thumbnails.forEach(thumb => {
+  if (!viewer || !closeBtn) {
+    console.error("Missing #PDF iframe or #x close button in HTML");
+    return;
+  }
+
+  thumbnails.forEach(thumb => {
     thumb.addEventListener("click", () => {
-        viewer.src = thumb.getAttribute("data-pdf"); // always doc1.pdf in your case
-        viewer.style.display = "block";
-        x.style.display = "block";
+      viewer.src = thumb.dataset.pdf;
+      viewer.style.display = "block";
+      closeBtn.style.display = "block";
     });
-});
+  });
 
-x.addEventListener("click", () => {
+  closeBtn.addEventListener("click", () => {
     viewer.style.display = "none";
     viewer.src = "";
-    x.style.display = "none";
+    closeBtn.style.display = "none";
+  });
 });
